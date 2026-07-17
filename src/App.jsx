@@ -1,8 +1,13 @@
 import "./App.css";
+import Display from "./Display";
+import ButtonGrid from "./Buttons";
 
 function App() {
   return (
-    <h1 className="h-screen flex justify-center items-center">Hello World</h1>
+    <div className="h-screen flex-col flex justify-center items-center">
+      <Display />
+      <ButtonGrid />
+    </div>
   );
 }
 
