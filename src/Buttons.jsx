@@ -1,29 +1,30 @@
+import { Button } from "./Components/Button";
 function ButtonGrid() {
   return (
     <div className="flex flex-col gap-1">
       <div className="flex gap-1">
-        <button className="button">7</button>
-        <button className="button">8</button>
-        <button className="button">9</button>
-        <button className="button">+</button>
+        <Button text="7" />
+        <Button text="8" />
+        <Button text="9" />
+        <Button text="+" operator="+" />
       </div>
       <div className="flex gap-1">
-        <button className="button">4</button>
-        <button className="button">5</button>
-        <button className="button">6</button>
-        <button className="button">-</button>
+        <Button text="4" />
+        <Button text="5" />
+        <Button text="6" />
+        <Button text="-" operator={"-"} />
       </div>
       <div className="flex gap-1">
-        <button className="button">1</button>
-        <button className="button">2</button>
-        <button className="button">3</button>
-        <button className="button">/</button>
+        <Button text="1" />
+        <Button text="2" />
+        <Button text="3" />
+        <Button text="/" operator="/" />
       </div>
       <div className="flex gap-1">
-        <button className="button">0</button>
-        <button className="button">CE</button>
-        <button className="button">=</button>
-        <button className="button">*</button>
+        <Button text="0" />
+        <Button text="CE" />
+        <Button text="*" operator="*" />
+        <Button text="=" operator="=" />
       </div>
     </div>
   );

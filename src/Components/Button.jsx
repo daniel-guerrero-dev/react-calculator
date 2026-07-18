@@ -1,3 +1,3 @@
-export function Button() {
-  null;
+export function Button(props) {
+  return <button className="button transition-colors">{props.text}</button>;
 }
