@@ -1,3 +1,7 @@
-export function Button(props) {
-  return <button className="button transition-colors">{props.text}</button>;
+export function Button({ text, operator, clickHandler }) {
+  return (
+    <button className="button" onClick={() => clickHandler(text, operator)}>
+      {text}
+    </button>
+  );
 }
