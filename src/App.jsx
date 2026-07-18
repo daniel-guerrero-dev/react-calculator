@@ -4,7 +4,7 @@ import ButtonGrid from "./Buttons";
 
 function App() {
   return (
-    <div className="h-screen flex-col flex justify-center items-center">
+    <div className="h-screen flex-col flex justify-center items-center gap-1">
       <Display />
       <ButtonGrid />
     </div>

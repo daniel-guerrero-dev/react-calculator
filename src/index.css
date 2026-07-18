@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@layer components {
+    .button {
+        @apply rounded-2xl w-10 justify-center flex bg-amber-50 text-black hover:bg-amber-200;
+    }
+}
+
+body {
+    background-color: black;
+    color: white;
+}
